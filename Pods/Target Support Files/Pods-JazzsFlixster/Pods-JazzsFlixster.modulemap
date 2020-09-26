@@ -1,0 +1,6 @@
+framework module Pods_JazzsFlixster {
+  umbrella header "Pods-JazzsFlixster-umbrella.h"
+
+  export *
+  module * { export * }
+}

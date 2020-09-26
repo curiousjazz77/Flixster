@@ -1,0 +1,6 @@
+framework module Pods_JazzsFlixster_JazzsFlixsterUITests {
+  umbrella header "Pods-JazzsFlixster-JazzsFlixsterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
