@@ -3,9 +3,7 @@ Week 1 Movie App
 
 ## Flix Part 1
 
-### User Stories
-User Stories - What will our app do?
-A user story simply describes the stuff we want a user of our app to be able to do. We'll break up each project into required and bonus user stories. Once we've listed out what our app should do, we can create a plan of attack.
+### User Stories - What will our app do?
 
 #### Required User Stories (10 pts)
 - [x] User sees an app icon on the home screen and a styled launch screen.
