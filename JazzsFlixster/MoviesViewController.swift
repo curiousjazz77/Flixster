@@ -19,7 +19,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
 
         // Do any additional setup after loading the view.
-        print("Hello")
+        //print("Hello")
+        
+        // TODO: Get the array of movies
+        // TODO: Store the movies in a property to use elsewhere
+        // TODO: Reload your table view data
         
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -34,11 +38,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
               self.movies = dataDictionary["results"] as! [[String: Any]]
             
               self.tableView.reloadData()
-              print(self.movies)
+              //print(self.movies)
 
-              // TODO: Get the array of movies
-              // TODO: Store the movies in a property to use elsewhere
-              // TODO: Reload your table view data
+              
 
            }
         }
@@ -70,14 +72,28 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("Loading up the details screen")
+        
+        // find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        //pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie //second movie refers to line 87 that we found above
+        
+        // when we transition, deselect the movie we chose as cleanup
+        // so when we come back, we don't see it selected anymore.
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+    
 
 }

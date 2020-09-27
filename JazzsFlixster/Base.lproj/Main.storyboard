@@ -20,19 +20,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="133" id="gkK-sS-QGI" customClass="MovieCell" customModule="JazzsFlixster">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="133"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="149" id="gkK-sS-QGI" customClass="MovieCell" customModule="JazzsFlixster">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gkK-sS-QGI" id="aqk-a3-JFn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZYd-4o-9Eb">
-                                                    <rect key="frame" x="7" y="5" width="123" height="128"/>
+                                                    <rect key="frame" x="7" y="5" width="123" height="144"/>
                                                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1me-82-2pN">
-                                                    <rect key="frame" x="138" y="34" width="262" height="88"/>
+                                                    <rect key="frame" x="138" y="34" width="262" height="104"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fo0-fI-xkf">
-                                                    <rect key="frame" x="7" y="2" width="123" height="129"/>
+                                                    <rect key="frame" x="7" y="2" width="123" height="145"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor"/>
                                                     <color key="tintColor" systemColor="labelColor"/>
                                                     <constraints>
@@ -86,6 +86,7 @@
                                             <outlet property="posterView" destination="fo0-fI-xkf" id="q1N-tC-UZj"/>
                                             <outlet property="synopsisLabel" destination="1me-82-2pN" id="k8R-Ol-ypI"/>
                                             <outlet property="titleLabel" destination="bJv-1R-Fhq" id="ffn-Fl-WX9"/>
+                                            <segue destination="mxz-84-yDA" kind="show" id="kgv-pa-hNw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -109,20 +110,21 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="yDj-Qv-r6x">
             <objects>
-                <viewController id="mxz-84-yDA" sceneMemberID="viewController">
+                <viewController id="mxz-84-yDA" customClass="MovieDetailsViewController" customModule="JazzsFlixster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIh-0D-UYk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="pTd-3v-gu3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Eqb-mb-gHB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-Ys-XFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876.8115942028987" y="132.58928571428572"/>
+            <point key="canvasLocation" x="1883" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="edp-sy-YJI">
