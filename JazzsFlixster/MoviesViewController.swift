@@ -41,8 +41,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
               self.tableView.reloadData()
               //print(self.movies)
 
-              
-
            }
         }
         task.resume()

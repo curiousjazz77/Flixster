@@ -44,6 +44,7 @@ class MovieDetailsViewController: UIViewController {
         // ios doesn't provide a default way to download images
         // but we can pull in third party libraries
         backdropView.af_setImage(withURL: backdropUrl!)
+        
     }
     
 
