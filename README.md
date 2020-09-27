@@ -19,3 +19,8 @@ A user story simply describes the stuff we want a user of our app to be able to 
 ### Walkthrough Gif
 
 ![](FlixsterJazz.gif)
+
+### Notes
+During this project, I had the most challenge with installing Alamofire and OAuthSwift pods. 
+In my app, I also removed the colored background for poster images, but it didn't remove itself in the preview on the device.
+After using a physical device to preview the app, I also noticed that XCode no longer showed a computer preview for a generated device. 
