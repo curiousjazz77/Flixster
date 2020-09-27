@@ -45,8 +45,6 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
               // we'll have a collection view later
               // print(self.movies)
 
-              
-
            }
         }
         task.resume()
