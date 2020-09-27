@@ -35,7 +35,7 @@ Week 1 Movie App
 
 #### REQUIRED (10pts)
 - [x] (5pts) User can tap a cell to see more details about a particular movie.
-- [ ] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+- [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
 - [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
@@ -47,4 +47,4 @@ Week 1 Movie App
 <img src="YOUR_GIF_URL_HERE" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+- While developing, I had a problem with the collection view. Within it, my images first appeared to be very small. I tried to make sure the image view within the cell and the collection view itself were of the appropriate sizes. But even after rewatching the video, the issue persisted. 
