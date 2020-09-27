@@ -17,3 +17,5 @@ A user story simply describes the stuff we want a user of our app to be able to 
 - [x] Run your app on a real device (gif is run on real device and loaded below).
 
 ### Walkthrough Gif
+
+![](FlixsterJazz.gif)
