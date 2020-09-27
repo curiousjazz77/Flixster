@@ -1,7 +1,7 @@
 # Flixster Movie App
 Week 1 and 2
 
-## Flix Part 2
+## ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Flix Part 2
 
 ### User Stories
 
@@ -20,7 +20,7 @@ Week 1 and 2
 ### Notes
 - While developing, I had a problem with the collection view. Within it, my images first appeared to be very small. I tried to make sure the image view within the cell and the collection view itself were of the appropriate sizes. But even after rewatching the video, the issue persisted. To rectify this problem, I needed to go to the collection view and change "Estimate Size" to None.
 
-## Flix Part 1
+## ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Flix Part 1
 
 ### User Stories - What will our app do?
 
