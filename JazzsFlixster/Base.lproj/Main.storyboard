@@ -162,6 +162,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pTd-3v-gu3"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KhL-gQ-bZx" appends="YES" id="DqH-RN-5kf"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Eqb-mb-gHB"/>
                     <connections>
@@ -172,8 +176,42 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-Ys-XFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KhL-gQ-bZx">
+                    <connections>
+                        <segue destination="Odi-j0-Wq9" kind="presentation" identifier="trailerSegue" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="tI7-sC-zQe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="120" y="1492"/>
+        </scene>
+        <!--Move Trailer View Controller-->
+        <scene sceneID="qKW-KH-mbH">
+            <objects>
+                <viewController title="Move Trailer View Controller" id="Odi-j0-Wq9" customClass="MovieTrailerViewController" customModule="JazzsFlixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y6K-u1-5bA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyO-QH-sEL">
+                                <rect key="frame" x="20" y="151" width="374" height="575"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZLp-D0-lZi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="trailerWebView" destination="eyO-QH-sEL" id="Fq7-z3-M7T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exb-kz-O6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="2295.5357142857142"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="edp-sy-YJI">
