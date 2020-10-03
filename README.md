@@ -1,7 +1,9 @@
 # Flixster Movie App
 
 ### Part 2, Final App Walkthrough GIF w/ Bonus
-<img src="" width=250><br>
+<img src="https://github.com/curiousjazz77/Flixster/blob/main/FlixterWithVideoWalkthrough.gif" width=250><br>
+
+
 
 ## ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Flix Part 2
 
